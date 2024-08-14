@@ -1,0 +1,42 @@
+#. Escreva um programa que solicita o nome e o estado civil de 20 pessoas pelo
+#teclado. Ao final, imprima apenas o nome das pessoas separadas por estado civil:
+#solteiras, casadas, divorciadas e viúvas (nesta ordem).
+
+solteiro = []
+casado = []
+divorciado = []
+viuvo = []
+
+for i in range (4):
+    nome = input(f'Digite o nome da pessoa {i + 1}:')
+    estado_civil = input('Digite o estado civil (solteiro, casado, divorciado, viuvo):')
+    
+    if estado_civil == 'solteiro':
+        solteiro.append(nome)
+    elif estado_civil == 'casado':
+        casado.append(nome)
+    elif estado_civil == 'divorciado':
+        divorciado.append(nome)
+    elif estado_civil == 'viuvo':
+        viuvo.append(nome)
+    else:
+        print('Estado civil invalido, por favor tente um destes estado civils(solteiro, casado, divorciado, viuvo)')
+        
+print('\nnomes por estado civil')
+
+print('\n solteiro')
+for nome in solteiro:
+    print(nome)
+    
+print('\ncasado')
+for nome in casado:
+    print(nome)
+    
+print('\ndivorciado')
+for nome in divorciado:
+    print(nome)
+    
+print('\nviuvo')
+for nome in viuvo:
+    print(nome)
+    
