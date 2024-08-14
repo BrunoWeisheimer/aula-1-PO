@@ -1,0 +1,12 @@
+tentativas = 6 
+
+for tentativa in range(tentativas):
+    senha = (input(f'Tentativa {tentativa + 1}/{tentativas}- Digite a senha:'))
+    
+    if senha.isdigit() and 5 <= len(senha) <= 10:
+        print('Senha definida com sucesso!')
+        break
+    else:
+        print('Senha invalida! Deve conter apenas dígitos e ter entre 5 e 10 caracteres')
+else:
+    print('numero de tentativas esgotado!')
