@@ -1,0 +1,14 @@
+#Escreva um programa que permita que o usuário crie sua lista de compras.
+#Primeiramente, solicite que ele informe quantos produtos serão adicionados na lista.
+#Depois disto, peça para que o usuário digite os produtos que ele vai comprar, e
+#armazene em uma lista. Ao final, imprima a lista de compras do usuário.
+
+quantidade_produtos = int(input('Digite a quantidade de produtos que voce ira comprar:'))
+
+lista = []
+
+for i in range(quantidade_produtos):
+    p = input('Informe o produto:')
+    lista.append(p)
+    
+print(f'lista de compras: {lista}')
