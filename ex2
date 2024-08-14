@@ -1,0 +1,11 @@
+#Escreva um programa que imprime na tela todos os valores entre dois valores
+#digitados pelo teclado (inclusive os valores digitados).
+
+valor1 = int(input(print("Digite o primeiro valor:")))
+valor2 = int(input(print("Digite o segundo valor:")))
+
+if valor1>valor2:
+    print('O primeiro valor deve ser menor que o segundo valor digitado acima!')
+else:
+    for i in range (valor1, valor2 +1):
+        print(i)
